@@ -22,6 +22,7 @@ function playSound(keyObj: any) {
 
   if (!audio) return
   key.classList.add('playing')
+  audio.currentTime = 0
   audio.play()
 }
 
@@ -46,7 +47,4 @@ keys.forEach(key => {
 })
 
 // play matching sound on key press
-document.addEventListener('keydown', e => {
-  console.log(e)
-  playSound
-})
+document.addEventListener('keydown', playSound)

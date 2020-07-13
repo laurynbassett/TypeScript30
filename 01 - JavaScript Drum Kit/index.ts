@@ -46,4 +46,7 @@ keys.forEach(key => {
 })
 
 // play matching sound on key press
-document.addEventListener('keydown', playSound)
+document.addEventListener('keydown', e => {
+  console.log(e)
+  playSound
+})

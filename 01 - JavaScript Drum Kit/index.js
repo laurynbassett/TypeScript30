@@ -41,5 +41,8 @@ keys.forEach(function (key) {
     key.addEventListener('transitionend', removeTransition);
 });
 // play matching sound on key press
-document.addEventListener('keydown', playSound);
+document.addEventListener('keydown', function (e) {
+    console.log(e);
+    playSound;
+});
 //# sourceMappingURL=index.js.map
